@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+:root{
+  --txt-color-primary: #fff;
+  --bg-color-primary: #373a38;
+  --bg-color-secondary: #e2d4b4;
+  --bg-image-url: 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  background-image: url(./background/aesthetic-3d-cube.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-background {
+  /* background: linear-gradient(0deg, var(--bg-color-primary) 0%, var(--bg-color-secondary) 100%); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: var(--txt-color-primary);
+}
+
+.App-background > div:first-of-type {
+  display: inherit;
+  flex-grow: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  /* background-color: #313331; */
+  /* border-bottom: 1px solid #ebf838; */
+  /* background-color: #b2a993; */
+  /* border-bottom: 1px solid #968f7e; */
+  /* color: #354f52; */
+  /* position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px; */
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-weight: 450;
+}
+
+.nav-item{
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--txt-color-primary);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-item::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.nav-item:hover::after, .nav-item:focus::after {
+	opacity: 1;
+  transform: scale(1);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: inside;
+}
+
+li {
+  display: block;
+  list-style: none;
+  transition: 200ms;
+}
+
+.nav-li {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.navigate-btn {
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  background-color: #c3c3c310;
+  text-align: center;
+  transition: 150ms;
+  cursor: pointer;
+
+  /* From https://css.glass */
+  background: rgba(188, 179, 179, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(188, 179, 179, 0.11);
+  margin-top: 1.5rem;
+}
+
+.navigate-btn:hover {
+  opacity: 0.7;
+}
+
+.navigate-btn:active {
+  opacity: 0.5;
+}
+
+.navigate-btn-li {
+  flex-direction: column;
+}
+
+.icon-link {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 2rem;
+}
+
+.icon {
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  display: block;
+  transition: 500ms;
+  margin-left: 1rem;
+}
+
+.icon:hover{
+  opacity: 0.8
+}
+.icon:active{
+  opacity: 0.6
+}
+
+.icon-discord {
+  background-image: url(./assets/icons8-discord.svg)
+}
+
+.icon-github {
+  background-image: url(./assets/icons8-github.svg)
+}
+
+.icon-linkedin {
+  background-image: url(./assets/icons8-linkedin-2.svg)
+}
+
+.icon-email {
+  background-image: url(./assets/icons8-gmail-logo.svg)
+}
+
+.copyright {
+  text-align: center;
+  color: #767373;
+  margin: 1rem;
+  font-size: 0.75rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #373a38; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4b4f4c; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #595b59;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #626563;
 }
