@@ -7,18 +7,18 @@ function Home() {
   const github = "https://github.com/qpham0304"
   const linkedin = "https://www.linkedin.com/in/quan-m-pham/"
   const discord = "#"
-  const[selectedPage, setSelectedPage] = useState("Home")
+  const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
   const navigate = useNavigate();
-  const profileImg = require("../assets/profile-image.png")
-  const profileName = require("../assets/profile-name.png")
+  const profileImg = require("../assets/images/profile-image.png")
+  const profileName = require("../assets/images/profile-name.png")
   const handleSelectPage = (page) => {
     navigate(`/${page}`)
     setSelectedPage(page);
   }
 
   return (
-    <div className="page-container">
+    <div className="page-container home">
       <div className="profile-container">
         <img src={profileImg} style={{width: "35%"}}/>
         <img src={profileName} style={{width: "250px"}}/>
