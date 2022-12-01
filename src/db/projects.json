@@ -1,44 +1,74 @@
 [
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "GearSim Graphic",
+        "technology": "C++, Qt Core, Qt Quick",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "3D openGL playground",
+        "technology": "C++, OpenGL",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "Habit Builder",
+        "technology": "MongoDB, Express, React, NodeJs",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "JavaSwing graphic editor",
+        "technology": "Java, JavaSwing",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "Online Art Marketplace Database",
+        "technology": "Java, Spring, MySQL, HTML, CSS",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "Image Viewer",
+        "technology": "React, JavaScript, HTML, CSS",
+        "description": [
+            
+        ],
         "ref": ""
     },
     {
-        "title": "",
-        "description": "",
-        "insight": "",
+        "title": "MultiMedia Player",
+        "technology": "React, JavaScript, HTML, CSS",
+        "description": [
+            
+        ],
+        "ref": ""
+    },
+    {
+        "title": "My Portfolio",
+        "technology": "React, JavaScript, HTML, CSS",
+        "description": [
+            
+        ],
+        "ref": ""
+    },
+    {
+        "title": "Network File System",
+        "technology": "C++, Socket Programming, MultiThreading",
+        "description": [
+            
+        ],
         "ref": ""
     },
 ]

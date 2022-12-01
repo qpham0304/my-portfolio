@@ -37,9 +37,9 @@ function Home() {
         })}
       </ul>
       <ul className="icon-link">
+        <a href={gmail}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
         <a href={github}> <span style={{margin: "0px"}} className="icon icon-github"/> </a>
         <a href={linkedin}> <span style={{margin: "0px"}} className="icon icon-linkedin"/> </a>
-        <a href={gmail}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
         <a href={discord}> <span style={{margin: "0px"}} className="icon icon-discord"/> </a>
       </ul>
     </div>

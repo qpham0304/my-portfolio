@@ -1,18 +1,27 @@
 [
     {
-        "job-title": "",
-        "employer": "",
-        "from": "",
-        "to": "",
-        "desciption": "",
-        "insight": ""
+        "job-title": "Software Engineer Intern",
+        "employer": "Omic Inc.",
+        "from": "Mar, 2022",
+        "to": "June, 2022",
+        "desciption": "full-stack development for a biomedical platform",
+        "insight": [
+            "Contribute to the code migration from the old platform to a newer one",
+            "Integrate a workflow pipeline builder that are capable of modeling protein complexes on a large-scale system",
+            "Troubleshoot and resolve problems introduced from pipeline tools",
+            "Develop and improve the user experience of the platform with various modern UI libraries"
+        ]
     },
     {
-        "job-title": "",
-        "employer": "",
-        "from": "",
-        "to": "",
-        "desciption": "",
-        "insight": ""
+        "job-title": "Computer Science Teaching ",
+        "employer": "North Seattle College",
+        "from": "Jan, 2020",
+        "to": "Sep, 2020",
+        "desciption": "Tutor students with various computer science related topics",
+        "insight": [
+            "Organize weekly study group for students to reinforce lecture materials.",
+            "Observe in class lecture and report student learning progress to professor to improve learning experience.",
+            "Offer one on one tutoring session for students who have questions or need help on assignments."
+        ]
     }
 ]

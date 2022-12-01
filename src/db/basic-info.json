@@ -1,0 +1,47 @@
+{
+    "name": "Quan Pham",
+    "location": "Seattle, WA",
+    "experience": "Junior",
+    "freelance": "Available",
+    "age": 22,
+    "email": "quan.m.pham0304@gmail.com",
+    "github": "https://github.com/qpham0304",
+    "linkedin": "https://www.linkedin.com/in/quan-m-pham/",
+    "discord": "Caerieme#1835",
+    "education": [
+        {
+            "level": "Bachelor",
+            "institution": "Seattle University",
+            "major": "Computer Science",
+            "start": "Sep, 2020",
+            "end": "Dec, 2022"
+        },
+        {
+            "level": "Associate",
+            "institution": "North Seattle College",
+            "major": "Computer Science",
+            "start": "Jan, 2017",
+            "end": "Jun, 2019"
+        },
+        {
+            "level": "High School",
+            "institution": "North Seattle College",
+            "major": "Computer Science",
+            "start": "Jan, 2019",
+            "end": "Jun, 2019"
+        }
+    ],
+    "languages": "Java, C++, Python, Javascript, C#",
+    "technology": "JavaSwing, Qt Core, Qt Quick, React, OpenGL, MongoDB, MySQL, Apache Spark, AWS, Docker",
+    "domains": " Object-oriented design, Algorithms, Computer Graphics, UX design, high-performance applications",
+    "tools": "JetBrains IDEs, VS Code, Git, Docker, QT Creator",
+    "management": "Agile, Scrum, Kanban, CI/CD",
+    "hobby": [
+        "I like playing games. I enjoy playing challenging games like the souls genre as it feels rewarding getting over a difficult challenges",
+        "I enjoy listening to music. Japanese's rock and country music are my most favorite genre",
+        "I also enjoy learning new instrument",
+        "I learn piano since I was 6",
+        "I also learn how to play guitar and bass on my own",
+        "Drawing is one of the skill that I want to improve on. It always amazes me how artists could create beautiful arts everyday"
+    ]
+}
