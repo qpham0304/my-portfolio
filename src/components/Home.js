@@ -3,10 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "../App.css"
 
 function Home() {
-  const gmail = "#"
-  const github = "https://github.com/qpham0304"
-  const linkedin = "https://www.linkedin.com/in/quan-m-pham/"
-  const discord = "#"
+  const info = require("../db/basic-info.json")
   const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
   const navigate = useNavigate();
@@ -32,15 +29,17 @@ function Home() {
       <ul className={"navigate-btn-li"}>
         {page.map(page => {
           return (
-            <li className="navigate-btn" key={page} onClick={() => handleSelectPage(page)}> {page} </li>
+            <li className="navigate-btn" key={page} onClick={() => handleSelectPage(page)}>
+              {page}
+            </li>
           )
         })}
       </ul>
       <ul className="icon-link">
-        <a href={gmail}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
-        <a href={github}> <span style={{margin: "0px"}} className="icon icon-github"/> </a>
-        <a href={linkedin}> <span style={{margin: "0px"}} className="icon icon-linkedin"/> </a>
-        <a href={discord}> <span style={{margin: "0px"}} className="icon icon-discord"/> </a>
+        <a href={`mailto:${info.email}`}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
+        <a href={info.github}> <span style={{margin: "0px"}} className="icon icon-github"/> </a>
+        <a href={info.linkedin}> <span style={{margin: "0px"}} className="icon icon-linkedin"/> </a>
+        <a href={info.discord}> <span style={{margin: "0px"}} className="icon icon-discord"/> </a>
       </ul>
     </div>
   )

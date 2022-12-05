@@ -3,72 +3,99 @@
         "title": "GearSim Graphic",
         "technology": "C++, Qt Core, Qt Quick",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "3D openGL playground",
         "technology": "C++, OpenGL",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "Habit Builder",
         "technology": "MongoDB, Express, React, NodeJs",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "JavaSwing graphic editor",
         "technology": "Java, JavaSwing",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "Online Art Marketplace Database",
         "technology": "Java, Spring, MySQL, HTML, CSS",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "Image Viewer",
         "technology": "React, JavaScript, HTML, CSS",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "MultiMedia Player",
         "technology": "React, JavaScript, HTML, CSS",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "My Portfolio",
         "technology": "React, JavaScript, HTML, CSS",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
+        "ref": "github.com/qpham0304"
     },
     {
         "title": "Network File System",
         "technology": "C++, Socket Programming, MultiThreading",
         "description": [
-            
+            "3",
+            "2",
+            "1",
+            "0"
         ],
-        "ref": ""
-    },
+        "ref": "github.com/qpham0304"
+    }
 ]

@@ -17,19 +17,21 @@ function About() {
 
   return (
     <div className="page-container about">
-      <div>
+      <div >
+        <div className="spacer"/>
         <div className="profile-pic">
           a picture
         </div>
-        <div style={{maxWidth: "80ch"}}>
+        <div className="spacer"/>
+        <div className="intro-box">
           <h4>About Me</h4>
-          <p style={{lineHeight: 1.8}}>
+          <p style={{ lineHeight: 1.8 }}>
             My name is Quan Pham, I am a Junior developer who just graduated from
             Seattle University. I am dedicated to my work and passionate about learning
             new things. My work can vary from fullstack development to UI/UX design, I
             am looking forward to working with you.
           </p>
-          <div className="contact-box">
+          <div className="info-box" style={{border: "1px solid #84a98c"}}>
             <ul>
               <li> <span>Name:</span> {info.name} </li>
               <li> <span>Education:</span> {info.education[0].level} </li>
@@ -37,41 +39,35 @@ function About() {
               <li> <span>Location:</span> {info.location} </li>
             </ul>
             <ul>
-              <li> <span className="icon-small icon-email"/><a href={`mailto:${info.email}`}>{info.email}</a> </li>
-              <li> <span className="icon-small icon-linkedin"/><a href={info.linkedin}>{info.linkedin}</a> </li>
-              <li> <span className="icon-small icon-github"/><a href={info.github}>{info.github}</a> </li>
-              <li> <span className="icon-small icon-discord"/><a href={info.discord}>{info.discord}</a> </li>
+              <li> <span>Freelance:</span> {info.freelance} </li>
+              <li> <span>Experience:</span> {info.experience} </li>
             </ul>
           </div>
           <button className="download-btn" onClick={getResume}>DOWNLOAD RESUME</button>
         </div>
       </div>
-      <div>
-        <div className="info-box">
-          <h6>Commonly use languages</h6>
-          <p>{info.languages}</p>
-          <h6>Domains of interest</h6>
-          <p>{info.domains}</p>
-          <h6>Technology</h6>
-          <p>{info.technology}</p>
-          <h6>Management</h6>
-          <p>{info.management}</p>
-          <h6>tools</h6>
-          <p>{info.tools}</p>
-        </div>
-        <div style={{minWidth: "35ch"}} />
+      <h4>My Skills</h4>
+      <div className="skill-box">
+        <h6>Commonly use languages</h6>
+        <p>{info.languages}</p>
+        <h6>Domains of interest</h6>
+        <p>{info.domains}</p>
+        <h6>Technology</h6>
+        <p>{info.technology}</p>
+        <h6>Management</h6>
+        <p>{info.management}</p>
+        <h6>tools</h6>
+        <p>{info.tools}</p>
       </div>
-      <div>
-        <div className="contact-box" style={{width: "calc(80ch + 300px"}}>
-          <ul>
-            <li> <span className="icon-small icon-email"/><a href={`mailto:${info.email}`}>{info.email}</a> </li>
-            <li> <span className="icon-small icon-linkedin"/><a href={info.linkedin}>{info.linkedin}</a> </li>
-            <li> <span className="icon-small icon-github"/><a href={info.github}>{info.github}</a> </li>
-            <li> <span className="icon-small icon-discord"/><a href={info.discord}>{info.discord}</a> </li>
-          </ul>
-        </div>
+      <h4>Contact</h4>
+      <div className="info-box">
+        <ul style={{margin: "-1rem 0"}}>
+          <li> <span className="icon-small icon-email" /><a href={`mailto:${info.email}`}>{info.email}</a> </li>
+          <li> <span className="icon-small icon-linkedin" /><a href={info.linkedin}>{info.linkedin}</a> </li>
+          <li> <span className="icon-small icon-github" /><a href={info.github}>{info.github}</a> </li>
+          <li> <span className="icon-small icon-discord" /><a href={info.discord}>{info.discord}</a> </li>
+        </ul>
       </div>
-      
     </div>
   )
 }

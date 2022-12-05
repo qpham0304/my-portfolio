@@ -15,6 +15,7 @@ code {
 @media (min-width: 400px) {
   ::-webkit-scrollbar {
     width: 10px;
+    height: 5px;
   }
   
   ::-webkit-scrollbar-track {
