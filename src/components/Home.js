@@ -4,9 +4,9 @@ import "../App.css"
 
 function Home() {
   const info = require("../db/basic-info.json")
+  const navigate = useNavigate();
   const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
-  const navigate = useNavigate();
   const profileImg = require("../assets/images/profile-image.png")
   const profileName = require("../assets/images/profile-name.png")
   const handleSelectPage = (page) => {
@@ -37,9 +37,9 @@ function Home() {
       </ul>
       <ul className="icon-link">
         <a href={`mailto:${info.email}`}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
-        <a href={info.github}> <span style={{margin: "0px"}} className="icon icon-github"/> </a>
-        <a href={info.linkedin}> <span style={{margin: "0px"}} className="icon icon-linkedin"/> </a>
-        <a href={info.discord}> <span style={{margin: "0px"}} className="icon icon-discord"/> </a>
+        <a href={info.github}> <span className="icon icon-github"/> </a>
+        <a href={info.linkedin}> <span className="icon icon-linkedin"/> </a>
+        <a href={info.discord}> <span className="icon icon-discord"/> </a>
       </ul>
     </div>
   )

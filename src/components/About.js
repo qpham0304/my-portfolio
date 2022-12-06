@@ -1,5 +1,4 @@
 import React from 'react'
-// import info from "../db/basic-info"
 
 function About() {
   const info = require("../db/basic-info")
@@ -31,7 +30,7 @@ function About() {
             new things. My work can vary from fullstack development to UI/UX design, I
             am looking forward to working with you.
           </p>
-          <div className="info-box" style={{border: "1px solid #84a98c"}}>
+          <div className="info-box" style={{border: "1px solid #e2d4b4"}}>
             <ul>
               <li> <span>Name:</span> {info.name} </li>
               <li> <span>Education:</span> {info.education[0].level} </li>

@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import '../App.css'
 
 function NavBar() {
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
   const navigate = useNavigate();
-  const[selectedPage, setSelectedPage] = useState("Home")
+  const location = useLocation();
+  const[selectedPage, setSelectedPage] = useState(location.pathname.slice(1))
   const [isToggleOn, setIsToggleOn] = useState(false)
   
   const handleSelectPage = (page) => {
     navigate(`/${page}`)
     setSelectedPage(page);
+    console.log(location.pathname.slice(1))
   }
 
   return (
@@ -19,7 +21,7 @@ function NavBar() {
         {page.map(page => {
           return (
             <li key={page} onClick={() => handleSelectPage(page)}>
-              <a className="nav-item" href="#0">{page}</a>
+              <a className={selectedPage === page ? "nav-item active" : "nav-item"} href="#0">{page}</a>
             </li>
           )
         })}
