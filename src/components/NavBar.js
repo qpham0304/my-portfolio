@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import '../App.css'
 
 function NavBar() {
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
@@ -10,9 +9,10 @@ function NavBar() {
   const [isToggleOn, setIsToggleOn] = useState(false)
   
   const handleSelectPage = (page) => {
-    navigate(`/${page}`)
-    setSelectedPage(page);
-    console.log(location.pathname.slice(1))
+    if(page !== selectedPage){
+      navigate(`/${page}`)
+      setSelectedPage(page);
+    }
   }
 
   return (

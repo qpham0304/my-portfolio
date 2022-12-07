@@ -3,10 +3,10 @@
         "title": "GearSim Graphic",
         "technology": "C++, Qt Core, Qt Quick",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Led a team of four members to design and develop a cross-platform, high-performance graphical user interface for GearSim, an aircraft landing gear simulation application.",
+            "Handled multiple roles, such as software architect and project manager throughout the project.",
+            "Completed MVP with a new and modern user interface that exceeded the sponsor’s expectations."
+
         ],
         "ref": "github.com/qpham0304"
     },
@@ -14,10 +14,9 @@
         "title": "3D openGL playground",
         "technology": "C++, OpenGL",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Developed a 3D graphics space from scratch that represents how objects are displayed in a 3D space.",
+            "Supported Lighting adjustment, shape transition, transformation, and shadow casting with real-time adjustable resolution and shading effect.",
+            "Effectively displayed objects with over 100,000 vertices without having any artifacts."
         ],
         "ref": "github.com/qpham0304"
     },
@@ -25,10 +24,9 @@
         "title": "Habit Builder",
         "technology": "MongoDB, Express, React, NodeJs",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Handled a full-stack cross-platform application using the MERN stack with a separate native UI for mobile.",
+            "Developed a REST API that interacts with MongoDB and handles complex queries with over 50,000 records.",
+            "Securely process users’ information and their request to the server JSON Web Token as authentication."
         ],
         "ref": "github.com/qpham0304"
     },

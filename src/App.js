@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Routes, Route, Navigate, useMatch, useLocation, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation, BrowserRouter } from "react-router-dom";
 import NavBar from './components/NavBar';
 import About from './components/About'
 import Experience from './components/Experience'
@@ -30,6 +30,7 @@ const Content = () => {
       }}
     >
       <Routes location={displayLocation}>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/hobby" element={<Hobby />} />

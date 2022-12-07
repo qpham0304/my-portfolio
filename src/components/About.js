@@ -17,11 +17,11 @@ function About() {
   return (
     <div className="page-container about">
       <div >
-        <div className="spacer"/>
+        <div className="spacer" />
         <div className="profile-pic">
           a picture
         </div>
-        <div className="spacer"/>
+        <div className="spacer" />
         <div className="intro-box">
           <h4>About Me</h4>
           <p style={{ lineHeight: 1.8 }}>
@@ -30,7 +30,7 @@ function About() {
             new things. My work can vary from fullstack development to UI/UX design, I
             am looking forward to working with you.
           </p>
-          <div className="info-box" style={{border: "1px solid #e2d4b4"}}>
+          <div className="info-box" style={{ border: "1px solid #e2d4b4" }}>
             <ul>
               <li> <span>Name:</span> {info.name} </li>
               <li> <span>Education:</span> {info.education[0].level} </li>
@@ -38,6 +38,7 @@ function About() {
               <li> <span>Location:</span> {info.location} </li>
             </ul>
             <ul>
+              <li> <span>Available:</span> {info.availability} </li>
               <li> <span>Freelance:</span> {info.freelance} </li>
               <li> <span>Experience:</span> {info.experience} </li>
             </ul>
@@ -60,7 +61,7 @@ function About() {
       </div>
       <h4>Contact</h4>
       <div className="info-box">
-        <ul style={{margin: "-1rem 0"}}>
+        <ul style={{ margin: "-1rem 0" }}>
           <li> <span className="icon-small icon-email" /><a href={`mailto:${info.email}`}>{info.email}</a> </li>
           <li> <span className="icon-small icon-linkedin" /><a href={info.linkedin}>{info.linkedin}</a> </li>
           <li> <span className="icon-small icon-github" /><a href={info.github}>{info.github}</a> </li>

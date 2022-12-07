@@ -2,7 +2,9 @@ import React from 'react'
 
 function Hobby() {
   return (
-    <div>Hobby</div>
+    <div>
+      Hobby
+    </div>
   )
 }
 
