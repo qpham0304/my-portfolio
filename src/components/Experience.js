@@ -1,23 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Experience() {
-  const experience = require("../db/experience.json")
+const ExperienceCard = (props) => {
+  const { exp } = props
+  const [expanded, setExpanded] = useState(false)
   return (
-    <div className="page-container exp">
-      <h3>My Work Experience</h3>
-      {experience.map((work, i) => {
+    <div className={"proj-card expanded"}>
+      <h5>{exp.jobTitle}</h5>
+      <h6>{exp.employer}</h6>
+      <h6>{exp.from} - {exp.to}</h6>
+      <h6>{exp.description}</h6>
+      <ul>
+        {exp.insight.map((item, i) => {
+          return (<li key ={i}>{item}</li>)
+        })}
+      </ul>
+    </div>
+  )
+}
+
+const ProjectsList = () => {
+  const experience = require("../db/experience.json")
+  return(
+    <div className="proj-list">
+      {experience.map((exp, i) => {
         return (
-          <div key={i} style={{margin: "1rem"}}>
-            {Object.keys(work).map((key, j) => {
-              return (
-                <div key={j}>
-                  {key}: {work[key]}
-                </div>
-              );
-            })}
-          </div>
+          <ExperienceCard key={i} exp={exp}/>
         )
       })}
+    </div>
+  )
+}
+
+function Experience() {
+  return (
+    <div className="page-container exp">
+      <h3>My Experience</h3>
+      <ProjectsList />
     </div>
   )
 }

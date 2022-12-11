@@ -1,13 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 function NavBar() {
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
   const navigate = useNavigate();
   const location = useLocation();
-  const[selectedPage, setSelectedPage] = useState(location.pathname.slice(1))
   const [isToggleOn, setIsToggleOn] = useState(false)
-  
+  const[selectedPage, setSelectedPage] = useState(() =>{
+    if(location.pathname.length === 1){
+      console.log(location.pathname +"passing")
+      return "Home"
+    }
+    else{
+      console.log("new route " + location.pathname.slice(1))
+      return location.pathname.slice(1)
+    }
+  })
+
+  useEffect(() => {
+    if(location.pathname.slice(1).length > 1)
+      handleSelectPage(location.pathname.slice(1))
+  }, [location])
+
   const handleSelectPage = (page) => {
     if(page !== selectedPage){
       navigate(`/${page}`)
@@ -21,7 +35,7 @@ function NavBar() {
         {page.map(page => {
           return (
             <li key={page} onClick={() => handleSelectPage(page)}>
-              <a className={selectedPage === page ? "nav-item active" : "nav-item"} href="#0">{page}</a>
+              <a className={selectedPage.toLowerCase() === page.toLowerCase() ? "nav-item active" : "nav-item"} href="#0">{page}</a>
             </li>
           )
         })}

@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Hobby from './components/Hobby'
 import Home from './components/Home'
 import Projects from './components/Projects'
+import EmptyRoute from './components/EmptyRoute';
 
 
 const Content = () => {
@@ -36,7 +37,8 @@ const Content = () => {
         <Route path="/hobby" element={<Hobby />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<EmptyRoute />} />
+        {/* <Route path="*" element={<Navigate to="/home" replace />} /> */}
       </Routes>
     </div>
   )

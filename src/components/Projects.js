@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ProjectCard = (props) => {
   const { proj } = props
-  const[expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   const handleExpandCard = () => {
     setExpanded(!expanded)

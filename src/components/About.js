@@ -1,6 +1,7 @@
 import React from 'react'
 
 function About() {
+  const profileImage = require("../assets/images/profile-image-2.jpg")
   const info = require("../db/basic-info")
   const getResume = () => {
     fetch("Quan_Pham_Resume_2022.pdf").then(response => {
@@ -19,7 +20,8 @@ function About() {
       <div >
         <div className="spacer" />
         <div className="profile-pic">
-          a picture
+          <img src={profileImage}/>
+          <div />
         </div>
         <div className="spacer" />
         <div className="intro-box">

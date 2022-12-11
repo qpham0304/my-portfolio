@@ -2,8 +2,17 @@ import React from 'react'
 
 function Hobby() {
   return (
-    <div>
-      Hobby
+    <div className="page-container hobby">
+      <iframe
+        style={{ borderRadius: "5px" }}
+        src="https://open.spotify.com/embed/playlist/4hXMUqcD5z7GPTQ3poWIIQ?utm_source=generator"
+        width="100%"
+        height="380"
+        frameBorder="0"
+        allowFullScreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      />
     </div>
   )
 }

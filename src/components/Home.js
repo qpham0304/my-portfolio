@@ -6,19 +6,20 @@ function Home() {
   const navigate = useNavigate();
   const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
-  const profileImg = require("../assets/images/profile-image.png")
+  const profileImg = require("../assets/images/profile-image-1.jpg")
   const profileName = require("../assets/images/profile-name.png")
+  
   const handleSelectPage = (page) => {
-    navigate(`/${page}`)
-    setSelectedPage(page);
+    if(page !== selectedPage){
+      navigate(`/${page}`)
+      setSelectedPage(page);
+    }
   }
 
   return (
     <div className="page-container home">
-      <div className="profile-container">
-        <img src={profileImg} style={{width: "35%"}}/>
-        <img src={profileName} style={{width: "250px"}}/>
-      </div>
+      <img src={profileImg} style={{borderRadius: 360, width: "200px", height: "200px", objectFit:"cover", margin: "1rem"}}/>
+      <img src={profileName} style={{width: "250px"}}/>
       <br />
       <div style={{width: "30ch"}}>
         <p>Hi there, welcome to my site!</p>
@@ -42,7 +43,6 @@ function Home() {
       </ul>
     </div>
   )
-
 }
 
 export default Home
