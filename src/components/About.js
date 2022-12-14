@@ -1,7 +1,7 @@
 import React from 'react'
 
 function About() {
-  const profileImage = require("../assets/images/profile-image-1.jpg")
+  const profileImage = require("../assets/images/profile-image.jpg")
   const info = require("../db/basic-info")
   const getResume = () => {
     fetch("Quan_Pham_Resume_2022.pdf").then(response => {

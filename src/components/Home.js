@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { ReactComponent as Qsvg } from '../assets/icons/custom-name-svg/Q.svg'
 import { ReactComponent as Usvg } from '../assets/icons/custom-name-svg/u.svg'
@@ -15,8 +15,7 @@ function Home() {
   const navigate = useNavigate();
   const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
-  const profileImg = require("../assets/images/profile-image-1.jpg")
-  const profileName = require("../assets/images/profile-name.png")
+  const profileImg = require("../assets/images/profile-image.jpg")
   
   const handleSelectPage = (page) => {
     if(page !== selectedPage){
@@ -25,9 +24,6 @@ function Home() {
     }
   }
 
-  const nameIds = ["Q", "uan", "P", "ham"]
-  const [curLength, setCurLength] = useState(0)
- 
   return (
     <div className="page-container home">
       <img src={profileImg} style={{borderRadius: 360, width: "200px", height: "200px", objectFit:"cover", margin: "1rem"}}/>

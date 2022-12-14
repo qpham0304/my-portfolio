@@ -6,7 +6,6 @@
             "Led a team of four members to design and develop a cross-platform, high-performance graphical user interface for GearSim, an aircraft landing gear simulation application.",
             "Handled multiple roles, such as software architect and project manager throughout the project.",
             "Completed MVP with a new and modern user interface that exceeded the sponsor’s expectations."
-
         ],
         "ref": "github.com/qpham0304"
     },
@@ -21,6 +20,25 @@
         "ref": "github.com/qpham0304"
     },
     {
+        "title": "JavaSwing graphic editor",
+        "technology": "Java, JavaSwing",
+        "description": [
+            "Designed a graphic shape drawing app from scratch using JavaSwing library",
+            "Applied Model-View-Controller architecture pattern to effectively divide the logic of the app",
+            "Showed effective use of Java API and inheritance design"
+        ],
+        "ref": "github.com/qpham0304"
+    },
+    {
+        "title": "My Portfolio",
+        "technology": "React, JavaScript, HTML, CSS, Figma",
+        "description": [
+            "Design my own personal portfolio page from scratch with plain css and no external frameworks",
+            "Demonstrate a deep understand of css and utilize its capability without relying on external libraies"
+        ],
+        "ref": "github.com/qpham0304"
+    },
+    {
         "title": "Habit Builder",
         "technology": "MongoDB, Express, React, NodeJs",
         "description": [
@@ -31,24 +49,12 @@
         "ref": "github.com/qpham0304"
     },
     {
-        "title": "JavaSwing graphic editor",
-        "technology": "Java, JavaSwing",
-        "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
-        ],
-        "ref": "github.com/qpham0304"
-    },
-    {
         "title": "Online Art Marketplace Database",
-        "technology": "Java, Spring, MySQL, HTML, CSS",
+        "technology": "MySQL, PHP, HTML, CSS",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Created a relational database that stores artist's and customer data along with the ability to track related detail about the product",
+            "Effectively design a clear relation between multiple tables",
+            "Support CRUD features with a simple interface for data query"
         ],
         "ref": "github.com/qpham0304"
     },
@@ -56,43 +62,27 @@
         "title": "Image Viewer",
         "technology": "React, JavaScript, HTML, CSS",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Simple and clean image viewer with responsive layout with plain css",
+            "Demonstrated a deep understand of css responsive layout without relying on external libraries"
         ],
         "ref": "github.com/qpham0304"
     },
     {
         "title": "MultiMedia Player",
-        "technology": "React, JavaScript, HTML, CSS",
+        "technology": "React, JavaScript, HTML, CSS, Youtube API",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Multimedia player that uses various request from google's youtube API",
+            "Support create, read, update, and delete for user's selected playlist"
         ],
         "ref": "github.com/qpham0304"
     },
     {
-        "title": "My Portfolio",
-        "technology": "React, JavaScript, HTML, CSS",
+        "title": "Auto price prediction model",
+        "technology": "Python, AWS",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
-        ],
-        "ref": "github.com/qpham0304"
-    },
-    {
-        "title": "Network File System",
-        "technology": "C++, Socket Programming, MultiThreading",
-        "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "2",
-            "1",
-            "0"
+            "Trained a machine learning model to predicts car prices based on various attributes",
+            "Utilized AWS to speed up the big data preprocessing and model training process",
+            "Successfully optimized and improved the model to predict the car prices with up to 91% accuracy"
         ],
         "ref": "github.com/qpham0304"
     }

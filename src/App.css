@@ -113,7 +113,6 @@ input[type=text], input[type=button] {
 .proj {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 .proj-list {
   width: 100%;
@@ -134,10 +133,6 @@ input[type=text], input[type=button] {
   width: 300px;
   height: 400px;
   position: relative;
-  /* background-image: url(./assets/images/profile-image-1.jpg);
-  background-size: cover; */
-  /* border: 1px solid transparent; */
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +234,6 @@ ul {
 }
 
 li {
-  /* display: block; */
   list-style: none;
   transition: 200ms;
 }
@@ -331,8 +325,8 @@ li {
 
 .hand-written-name {
   stroke-linecap: square;
-  /* stroke-miterlimit: 10;
-  stroke-linejoin: bevel; */
+  stroke-miterlimit: 10;
+  stroke-linejoin: bevel;
   stroke-width: 1.5px;
   stroke: var(--txt-color-secondary);
 }
@@ -559,7 +553,7 @@ transform: scale(0);
 @media (max-width: 500px){
   .wrapper {
     height: 100%;
-    /* height: calc(var(--vh, 1vh) * 100); */
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 

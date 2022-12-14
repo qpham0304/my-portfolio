@@ -33,7 +33,7 @@ function NavBar() {
         {page.map(page => {
           return (
             <li key={page} onClick={() => handleSelectPage(page)}>
-              <a className={selectedPage.toLowerCase() === page.toLowerCase() ? "nav-item active" : "nav-item"} href="#0">{page}</a>
+              <a className={selectedPage.toLowerCase() === page.toLowerCase() ? "nav-item active" : "nav-item"}>{page}</a>
             </li>
           )
         })}
