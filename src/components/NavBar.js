@@ -8,11 +8,9 @@ function NavBar() {
   const [isToggleOn, setIsToggleOn] = useState(false)
   const[selectedPage, setSelectedPage] = useState(() =>{
     if(location.pathname.length === 1){
-      console.log(location.pathname +"passing")
       return "Home"
     }
     else{
-      console.log("new route " + location.pathname.slice(1))
       return location.pathname.slice(1)
     }
   })

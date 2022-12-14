@@ -6,9 +6,9 @@ const ExperienceCard = (props) => {
   return (
     <div className={"proj-card expanded"}>
       <h5>{exp.jobTitle}</h5>
-      <h6>{exp.employer}</h6>
       <h6>{exp.from} - {exp.to}</h6>
-      <h6>{exp.description}</h6>
+      <h6> <span fonrWeight="bold">Employer:</span> {exp.employer}</h6>
+      <h6> <span fonrWeight="bold">Description:</span> {exp.description}</h6>
       <ul>
         {exp.insight.map((item, i) => {
           return (<li key ={i}>{item}</li>)
