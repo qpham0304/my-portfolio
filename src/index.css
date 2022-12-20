@@ -13,6 +13,22 @@ code {
 }
 
 @media (min-width: 400px) {
+  .spotify::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .spotify::-webkit-scrollbar-track {
+    background: #373a3833;
+  }
+  
+  .spotify::-webkit-scrollbar-thumb {
+    background: #4b4f4caa;
+  }
+
+  .spotify::-webkit-scrollbar-thumb:hover, .spotify::-webkit-scrollbar-thumb:active {
+    background: #4b4f4c;
+  }
+  
   ::-webkit-scrollbar {
     width: 10px;
     height: 5px;

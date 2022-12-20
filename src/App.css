@@ -1,7 +1,7 @@
 :root{
   --txt-color-primary: #cad2c5;
   --txt-color-secondary: #fff;
-  --overlay-color: #112233;
+  --overlay-color: #112233ee;
   --bg-color-primary: #373a38;
   --bg-color-secondary: #e2d4b4;
   --border-color: #84a98c;
@@ -96,13 +96,31 @@ input[type=text], input[type=button] {
 .hobby {
   display: flex;
   padding: 1rem;
-  align-items: center;
+  align-items: flex-start;
 }
-
 .spotify {
   width: 100%;
   height: 80vh;
   overflow: auto;
+  margin-top: 1rem;
+}
+.song-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: calc(var(--txt-size)*0.9);
+  color: var(--txt-color-primary);
+}
+.song-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--bg-color-primary);
+  transition: 150ms;
+}
+.song-item:hover {
+  background-color: #76737333;
+}
+.song-item.active {
+  background-color: #76737355;
 }
 
 .exp {
@@ -200,7 +218,12 @@ a {
   color: inherit;
 }
 
-.download-btn, .navigate-btn, .nav-item {
+.border {
+  border: 1px solid var(--border-color)
+  /* #e2d4b4 */
+}
+
+.btn, .navigate-btn, .nav-item, a {
   cursor: pointer;
 }
 
@@ -481,24 +504,40 @@ li {
   align-items: center;
 }
 
+.copy-btn {
+  content: "copy";
+  margin-left: 2rem;
+  padding: 0.3rem;
+}
+
 span {
   font-weight: bold;
   margin-right: 0.5rem;
   color: var(bg-color-secondary);
 }
 
-.download-btn {
-  padding: 1rem;
-  margin: 1rem 0 1rem 0;
-  border-radius: 3px;
-  font-weight: 500;
-  font-family: "Segoe UI";
+.btn {
   color: inherit;
   border: 1px solid #84a98c33;
   background-color: var(--dl-btn-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  transition: 500ms;
+  border-radius: 3px;
+  transition: 100ms;
+}
+.copy-btn:hover {
+  opacity: 0.9;
+}
+.copy-btn:active {
+  opacity: 0.7;
+}
+
+.download-btn {
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 500;
+  font-family: "Segoe UI";
+  transition: 300ms;
 }
 .download-btn:hover {
   background: transparent;

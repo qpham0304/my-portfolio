@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function About() {
   const profileImage = require("../assets/images/profile-image.jpg")
   const info = require("../db/basic-info")
+  const [isDiscordCopied, setDiscordCopied] = useState(false)
+
   const getResume = () => {
     fetch("Quan_Pham_Resume_2022.pdf").then(response => {
       response.blob().then(blob => {
@@ -15,9 +17,14 @@ function About() {
     })
   }
 
+  const handleCopyText = (text) => {
+    navigator.clipboard.writeText(text)
+    setDiscordCopied(true)  
+  }
+
   return (
     <div className="page-container about">
-      <div >
+      <div>
         <div className="spacer" />
         <div className="profile-pic">
           <img src={profileImage}/>
@@ -31,7 +38,7 @@ function About() {
             new things. My work can vary from fullstack development to UI/UX design, I
             am looking forward to working with you.
           </p>
-          <div className="info-box" style={{ border: "1px solid #e2d4b4" }}>
+          <div className="info-box border">
             <ul>
               <li> <span>Name:</span> {info.name} </li>
               <li> <span>Education:</span> {info.education[0].level} </li>
@@ -44,7 +51,7 @@ function About() {
               <li> <span>Experience:</span> {info.experience} </li>
             </ul>
           </div>
-          <button className="download-btn" onClick={getResume}>DOWNLOAD RESUME</button>
+          <button className="btn download-btn" onClick={getResume}>DOWNLOAD RESUME</button>
         </div>
       </div>
       <h4>My Skills</h4>
@@ -63,10 +70,25 @@ function About() {
       <h4>Contact</h4>
       <div className="info-box">
         <ul style={{ margin: "-1rem 0" }}>
-          <li> <span className="icon-small icon-email" /><a href={`mailto:${info.email}`}>{info.email}</a> </li>
-          <li> <span className="icon-small icon-linkedin" /><a href={info.linkedin}>{info.linkedin}</a> </li>
-          <li> <span className="icon-small icon-github" /><a href={info.github}>{info.github}</a> </li>
-          <li> <span className="icon-small icon-discord" /><a href={info.discord}>{info.discord}</a> </li>
+          <li>
+            <span className="icon-small icon-email" />
+            <a href={`mailto:${info.email}`}>{info.email}</a>
+          </li>
+          <li>
+            <span className="icon-small icon-linkedin" />
+            <a href={info.linkedin}>{info.linkedin}</a>
+          </li>
+          <li>
+            <span className="icon-small icon-github" />
+            <a href={info.github}>{info.github}</a>
+          </li>
+          <li> 
+            <span className="icon-small icon-discord" />
+            <a>{info.discord}</a>
+            <button className={'btn copy-btn'} onClick={() => handleCopyText(info.discord)}>
+              {isDiscordCopied ? "copied" : "copy"}
+            </button>
+          </li>
         </ul>
       </div>
     </div>
