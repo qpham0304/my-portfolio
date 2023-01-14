@@ -41,7 +41,7 @@ function Home() {
       <br />
       <div style={{width: "30ch"}}>
         <p>Hi there, welcome to my site!</p>
-        <p>Here, you will find everything about to me. Let's know each other better</p>
+        <p>Here, you will find everything about me. Let's know each other better</p>
       </div>
       <p style={{fontSize: "2rem", fontWeight: "100"}}>[status: open to work]</p>
       <ul className={"navigate-btn-li"}>
