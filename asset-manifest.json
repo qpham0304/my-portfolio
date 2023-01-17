@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.3244f6e6.css",
-    "main.js": "/my-portfolio/static/js/main.5c0d4b2c.js",
+    "main.js": "/my-portfolio/static/js/main.b662b31b.js",
     "static/media/aesthetic-3d-cube.jpg": "/my-portfolio/static/media/aesthetic-3d-cube.b9b6790ae11cdbefda7b.jpg",
     "static/media/profile-image.jpg": "/my-portfolio/static/media/profile-image.1ccf9b09d87a22431353.jpg",
+    "static/media/cockatoo-upscaled.jpg": "/my-portfolio/static/media/cockatoo-upscaled.bd52e0c53a01766a2cd8.jpg",
     "static/media/Quan_Pham_Resume.pdf": "/my-portfolio/static/media/Quan_Pham_Resume.4e47ce80b100ea374d28.pdf",
     "static/media/icons8-github.svg": "/my-portfolio/static/media/icons8-github.0b81c451f8f07cea8623.svg",
     "static/media/icons8-discord.svg": "/my-portfolio/static/media/icons8-discord.699b3af2dc38232c52ef.svg",
@@ -18,10 +19,10 @@
     "static/media/u.svg": "/my-portfolio/static/media/u.1f046f16a575e387a782901d47e41297.svg",
     "static/media/underline.svg": "/my-portfolio/static/media/underline.cf2bb3237e7e02d63dd038ca44414de3.svg",
     "main.3244f6e6.css.map": "/my-portfolio/static/css/main.3244f6e6.css.map",
-    "main.5c0d4b2c.js.map": "/my-portfolio/static/js/main.5c0d4b2c.js.map"
+    "main.b662b31b.js.map": "/my-portfolio/static/js/main.b662b31b.js.map"
   },
   "entrypoints": [
     "static/css/main.3244f6e6.css",
-    "static/js/main.5c0d4b2c.js"
+    "static/js/main.b662b31b.js"
   ]
 }
