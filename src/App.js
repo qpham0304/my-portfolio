@@ -37,7 +37,7 @@ const Content = () => {
         <Route path="/hobby" element={<Hobby />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<EmptyRoute />} />
+        <Route path="*" element={<Home />} />
         {/* <Route path="*" element={<Navigate to="/home" replace />} /> */}
       </Routes>
     </div>
