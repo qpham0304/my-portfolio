@@ -1,21 +1,10 @@
 import React, { useState } from 'react'
+import resume from '../assets/Quan_Pham_Resume.pdf'
 
 function About() {
   const profileImage = require("../assets/images/profile-image.jpg")
   const info = require("../db/basic-info")
   const [isDiscordCopied, setDiscordCopied] = useState(false)
-
-  const getResume = () => {
-    fetch("Quan_Pham_Resume_2022.pdf").then(response => {
-      response.blob().then(blob => {
-        const fileUrl = window.URL.createObjectURL(blob);
-        let alink = document.createElement('a');
-        alink.href = fileUrl;
-        alink.download = "Quan_Pham_Resume_2022.pdf";
-        alink.click();
-      })
-    })
-  }
 
   const handleCopyText = (text) => {
     navigator.clipboard.writeText(text)
@@ -51,7 +40,10 @@ function About() {
               <li> <span>Experience:</span> {info.experience} </li>
             </ul>
           </div>
-          <button className="btn download-btn" onClick={getResume}>DOWNLOAD RESUME</button>
+          <button className="btn download-btn">
+            <a href={resume}>DOWNLOAD RESUME</a>
+          </button>
+          
         </div>
       </div>
       <h4>My Skills</h4>
