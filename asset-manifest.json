@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.3244f6e6.css",
+    "main.js": "/my-portfolio/static/js/main.f891547e.js",
+    "static/media/aesthetic-3d-cube.jpg": "/my-portfolio/static/media/aesthetic-3d-cube.b9b6790ae11cdbefda7b.jpg",
+    "static/media/profile-image.jpg": "/my-portfolio/static/media/profile-image.1ccf9b09d87a22431353.jpg",
+    "static/media/icons8-github.svg": "/my-portfolio/static/media/icons8-github.0b81c451f8f07cea8623.svg",
+    "static/media/icons8-discord.svg": "/my-portfolio/static/media/icons8-discord.699b3af2dc38232c52ef.svg",
+    "static/media/am.svg": "/my-portfolio/static/media/am.e57b9a24968f853ccd510f67fea750da.svg",
+    "static/media/an.svg": "/my-portfolio/static/media/an.e4806323bf78894fa205fded19ef1031.svg",
+    "static/media/icons8-linkedin-2.svg": "/my-portfolio/static/media/icons8-linkedin-2.992fd6283f7c6cfda3be.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/Q.svg": "/my-portfolio/static/media/Q.3ad4ac306c884eb84190f5e95567cc55.svg",
+    "static/media/P.svg": "/my-portfolio/static/media/P.1db1ef905b0569fe159ecb477aeecbda.svg",
+    "static/media/icons8-gmail-logo.svg": "/my-portfolio/static/media/icons8-gmail-logo.2271a09dbf0646c9b8e3.svg",
+    "static/media/h.svg": "/my-portfolio/static/media/h.e1f9d1d9fc67d1f50dc669c0ef4fc3d2.svg",
+    "static/media/u.svg": "/my-portfolio/static/media/u.1f046f16a575e387a782901d47e41297.svg",
+    "static/media/underline.svg": "/my-portfolio/static/media/underline.cf2bb3237e7e02d63dd038ca44414de3.svg",
+    "main.3244f6e6.css.map": "/my-portfolio/static/css/main.3244f6e6.css.map",
+    "main.f891547e.js.map": "/my-portfolio/static/js/main.f891547e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3244f6e6.css",
+    "static/js/main.f891547e.js"
+  ]
+}
