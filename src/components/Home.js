@@ -57,7 +57,7 @@ function Home() {
         <a href={`mailto:${info.email}`}> <span style={{margin: "0px"}} className="icon icon-email"/> </a>
         <a href={info.github}> <span style={{margin: "0"}}  className="icon icon-github"/> </a>
         <a href={info.linkedin}> <span  style={{margin: "0"}} className="icon icon-linkedin"/> </a>
-        <a href={info.discord}> <span style={{margin: "0"}}  className="icon icon-discord"/> </a>
+        <a href={`https://discordapp.com/users/305386049796964353`}> <span style={{margin: "0"}}  className="icon icon-discord"/> </a>
       </ul>
     </div>
   )

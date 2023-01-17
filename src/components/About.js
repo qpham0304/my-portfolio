@@ -86,7 +86,7 @@ function About() {
             <span className="icon-small icon-discord" />
             <a>{info.discord}</a>
             <button className={'btn copy-btn'} onClick={() => handleCopyText(info.discord)}>
-              {isDiscordCopied ? "copied" : "copy"}
+              {"Copy"}
             </button>
           </li>
         </ul>
