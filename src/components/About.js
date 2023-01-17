@@ -41,7 +41,7 @@ function About() {
             </ul>
           </div>
           <button className="btn download-btn">
-            <a href={resume}>DOWNLOAD RESUME</a>
+            <a href={resume} target='_blank'>DOWNLOAD RESUME</a>
           </button>
           
         </div>

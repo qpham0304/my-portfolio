@@ -15,7 +15,7 @@ function Home() {
   const navigate = useNavigate();
   const [selectedPage, setSelectedPage] = useState("Home")
   const page = ["Home", "About", "Hobby", "Experience", "Projects"]
-  const profileImg = require("../assets/images/profile-image.jpg")
+  const profileImg = require("../assets/images/cockatoo-upscaled.jpg")
   
   const handleSelectPage = (page) => {
     if(page !== selectedPage){
